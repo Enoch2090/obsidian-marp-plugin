@@ -56,5 +56,20 @@ export class MarpSettingTab extends PluginSettingTab {
             await this.plugin.saveSettings();
           }),
       );
+
+    new Setting(containerEl)
+      .setName('Export Folder Location')
+      .setDesc(
+        'Specify the relative path of the directory where the exported files will be saved.',
+      )
+      .addText(text =>
+        text
+          .setPlaceholder('MarpExport')
+          .setValue(this.plugin.settings.exportDir)
+          .onChange(async v => {
+            this.plugin.settings.exportDir = v;
+            await this.plugin.saveSettings();
+          }),
+      );
   }
 }

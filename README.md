@@ -4,8 +4,8 @@
 - Allows html marks in original Markdown.
 - All paths will be expanded to absolute paths to the root of vault.
 - Opens file explorer after export.
-- Allows setting a export path instead of `%USER%/Download`.
-- Switches the cli from npx command to Marp binary. Need to download the binary from [https://github.com/marp-team/marp-cli/releases/latest](https://github.com/marp-team/marp-cli/releases/latest) and place it under `.obsidian/plugins/marp`.
+- Allows setting an export path instead of `%USER%/Download`.
+- Switches the export cli call from npx command to Marp binary. Need to download the binary from [https://github.com/marp-team/marp-cli/releases/latest](https://github.com/marp-team/marp-cli/releases/latest) and place it under `.obsidian/plugins/marp`. 
 
 ---
 
